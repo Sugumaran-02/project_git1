@@ -22,6 +22,12 @@ public class login_objects {
 	@FindBy(id="login-button")
 	public WebElement login_btn;
 	
+	@FindBy (id="react-burger-menu-btn")
+	public WebElement menu_bar;
+	
+	@FindBy (id="logout_sidebar_link")
+	public WebElement logout_btn;
+	
 //	public void username() {
 //		username.sendKeys("standard_user");
 //	}
@@ -35,4 +41,10 @@ public class login_objects {
 		
 	}
 
+	public void logout() {
+		menu_bar.click();
+		logout_btn.click();
+		
+	}
+	
 }
