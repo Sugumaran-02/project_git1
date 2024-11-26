@@ -17,7 +17,8 @@ Scenario Outline: TC2 short low to high
 Given TC02 open the browser2
 When TC02 enter user <username1> and <password1> and login
 And  TC02 Select short order price low to high
-Then TC02 Click logout
+Then TC02 Click logout 
+And Tc02 check logout
 
 Examples:
 |username1|password1|
